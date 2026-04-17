@@ -54,6 +54,3 @@ def start_honeypot(port=2222):
         print(f"[*] Connection detected from {addr[0]}")
         client_thread = threading.Thread(target=handle_connection, args=(client_socket,))
         client_thread.start()
-
-if _name_ == "_main_":
-    start_honeypot()
